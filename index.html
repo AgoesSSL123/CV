@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>cv</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 25px 15px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    nav {
+      background-color: #3498db;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px 5px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      margin: 6px;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: 0.3s;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      background-color: white;
+      color: #3498db;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 25px auto;
+      padding: 0 15px;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 25px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 26px;
+    }
+
+    h2 {
+      font-size: 22px;
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+    .profile-img {
+      display: block;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #3498db;
+      margin: 10px auto 20px;
+    }
+
+    .skills, .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .skill-item, .project-card {
+      flex: 1 1 30%;
+      background-color: #ecf0f1;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    .social-links {
+      margin-top: 10px;
+    }
+
+    .social-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .skills, .projects {
+        flex-direction: column;
+      }
+
+      .skill-item, .project-card {
+        flex: 1 1 100%;
+      }
+
+      .profile-img {
+        width: 90px;
+        height: 90px;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        font-size: 13px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Agus Susilo</h1>
+      <p>Web Developer | Designer | Kreatif</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#tentang">Tentang</a>
+    <a href="#keahlian">Keahlian</a>
+    <a href="#proyek">Proyek</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <div class="container">
+    <section id="tentang">
+      <h2>Tentang Saya</h2>
+      <img src="profil.jpg" alt="Foto Agus Susilo" class="profile-img" />
+      <p>Halo! Saya Agus Susilo, seorang profesional kreatif dari Indramayu. Saya lahir pada 6 Oktober 2003 dan memiliki passion di bidang pengembangan web dan desain.</p>
+      <p>Saya selalu bersemangat untuk mempelajari teknologi baru dan menciptakan solusi digital yang inovatif.</p>
+    </section>
+
+    <section id="keahlian">
+      <h2>Keahlian</h2>
+      <div class="skills">
+        <div class="skill-item">
+          <h3>Pengembangan Web</h3>
+          <p>Laravel, Vite + React, HTML, CSS, JavaScript, PHP, MySQL</p>
+        </div>
+        <div class="skill-item">
+          <h3>Desain</h3>
+          <p>Photoshop,Picsart, Figma, UI/UX Design</p>
+        </div>
+        <div class="skill-item">
+          <h3>Lainnya</h3>
+          <p>jungler dan exp liner terkuat😎</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyek">
+      <h2>Proyek Terbaru</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>Website E-commerce</h3>
+          <p>Platform e-commerce lengkap dengan sistem pembayaran dan manajemen produk.</p>
+        </div>
+        <div class="project-card">
+          <h3>Aplikasi Task Management</h3>
+          <p>Web untuk manajemen tugas dengan fitur kolaborasi tim.</p>
+        </div>
+        <div class="project-card">
+          <h3>Portofolio Fotografi</h3>
+          <p>Website portofolio untuk fotografer profesional.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak">
+      <h2>Hubungi Saya</h2>
+      <p>ID ML: 543578424</p>
+      <p>Email: agus.susilo@example.com</p>
+      <p>Telepon: +62 857-2427-6275</p>
+      <p>Alamat: Indramayu, Jawa Barat, Indonesia</p>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/agus-susilo" target="_blank">LinkedIn</a>
+        <a href="https://github.com/agussusilo" target="_blank">GitHub</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Agus Susilo. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelector('header').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
